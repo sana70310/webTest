@@ -1,0 +1,209 @@
+#relimg {
+    position: relative;
+    width: 100%;
+}
+.absimg {
+    position: absolute;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+    width: 100%;
+}
+.absolute {
+    position: absolute;
+    width: 100%;
+}
+
+#top-text{
+    margin: auto;
+    font-size: 80px;
+}
+
+#relmen{
+    text-align: center;
+    position: absolute;
+    /* position: relative; */
+    background-color: rgb(0, 0, 0, 1);
+    width: 15%;
+}
+
+@keyframes open {
+    0% {
+        background-color: rgb(0, 0, 0, 1);
+    }
+    100% {
+        background-color: rgb(0, 0, 0, 0);
+    }
+}
+#open{
+    animation-name: open;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    text-align: center;
+    position: absolute;
+    width: 15%;
+}
+
+@keyframes close {
+    0% {
+        background-color: rgb(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgb(0, 0, 0, 1);
+    }
+}
+#close{
+    animation-name: close;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    text-align: center;
+    position: absolute;
+    width: 15%;
+}
+
+#absmen{
+    display: inline-block;
+    transform: translate(0%,50%);
+    /* position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    width: 50%;
+    height: 50%;
+}
+
+.overlay {
+    position: fixed;
+    background: rgba(51, 55, 69, 0.80);
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+}
+
+#overlay-menu ul{
+    list-style: none;
+    font-family: 'Century Gothic';
+}
+
+#overlay-menu a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.9);
+}
+
+#nav-title{
+    font-family: 'Century Gothic';
+    color: rgb(255, 255, 255, 0.9);
+}
+
+#overlay-menu{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+    /* .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    }
+
+.overlay #nav-title {
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 8%;
+}
+
+.overlay nav {
+    position: relative;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 40px;
+}
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+.overlay ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-bottom: 50px;
+}
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.overlay ul li a:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 43.5%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    transition: .35s;
+}
+    
+.overlay ul li a:hover,
+.overlay ul li a:focus,
+.overlay ul li a:active {
+    color: #ea2e49;
+}
+
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
+    width: 100%;
+    background: #ea2e49;
+}
+
+.overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+    left: 0;
+    }
+} */
+
